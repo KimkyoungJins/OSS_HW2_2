@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>도서 상세</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- 내 스타일 -->
+  <link rel="stylesheet" href="my.css">
+  <script>
+    function confirmDelete() {
+      var result = confirm("게시물을 삭제할까요?");
+      if (result) {
+        alert("게시물이 삭제되었습니다.");
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>도서 상세 정보</h1>
+    <p>도서명: 책 제목1</p>
+    <p>저자: 저자1</p>
+    <p>출판사: 출판사1</p>
+    <p>출판년도: 2020</p>
+    <p>ISBN: 1234567890</p>
+    <p>장르: 소설</p>
+    <a href="edit.html">Edit</a>
+    <button onclick="confirmDelete()">Delete</button>
+  </div>
+</body>
+</html>

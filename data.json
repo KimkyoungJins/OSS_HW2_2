@@ -1,26 +1,47 @@
 {
-    "students": [
-        {
-            "id": 1,
-            "name": "Jerry",
-            "age": 20
-        },
-        {
-            "id": 2,
-            "name": "Tom",
-            "age": 18
-        }
-    ],
-    "courses": [
-        {
-            "id": 1,
-            "cname": "Open source studio",
-            "credit": 3
-        },
-        {
-            "id": 2,
-            "cname": "Programming studio",
-            "credit": 2
-        }
-    ]
+  "students": [
+    {
+      "id": "1",
+      "name": "Jerry",
+      "age": 20,
+      "major": "Computer Science",
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Tom",
+      "age": 18,
+      "major": "Math",
+      "grade": "B"
+    },
+    {
+      "id": "3",
+      "name": "Alice",
+      "age": 22,
+      "major": "Biology",
+      "grade": "A+"
+    },
+    {
+      "id": "4",
+      "name": "Bob",
+      "age": 21,
+      "major": "Physics",
+      "grade": "B+"
+    },
+    {
+      "id": "4337",
+      "name": "",
+      "age": ""
+    },
+    {
+      "id": "2fb5",
+      "name": "",
+      "age": ""
+    },
+    {
+      "id": "1ab2",
+      "name": "jin",
+      "age": "22"
+    }
+  ]
 }

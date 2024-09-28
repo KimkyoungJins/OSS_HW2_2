@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJAX CRUD Example</title>
+    <title>학생 관리 시스템</title>
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        input {
+            margin: 5px 0;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            margin: 5px 5px 5px 0;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        #contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #contents li {
+            margin: 5px 0;
+        }
+        #contents button {
+            margin-left: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <h2>학생관리 창</h2>
-    <!-- 버튼 -->
-    <button id="btnStu">학생 데이터 불러오기</button>
-    <button id="btnAdd">학생 데이터 추가하기</button>
+    <h2>학생 관리 시스템</h2>
+
+    <!-- 이름과 나이 입력 필드 -->
+    <div>
+        <input type="text" id="name" placeholder="이름 입력">
+        <input type="number" id="age" placeholder="나이 입력">
+        <button id="btnAdd">학생 추가하기</button>
+    </div>
+
+    <!-- 학생 목록 불러오기 버튼 -->
+    <div>
+        <button id="btnStu">학생 목록 불러오기</button>
+    </div>
 
     <!-- 학생 목록을 표시할 영역 -->
     <div id="contents"></div>
 
-    <!-- 이름과 나이 입력 필드 -->
-    <input type="text" id="name" placeholder="Enter name">
-    <input type="number" id="age" placeholder="Enter age">
-
     <!-- 자바스크립트 파일을 연결 -->
     <script src="crud.js"></script>
 </body>
-
 </html>
